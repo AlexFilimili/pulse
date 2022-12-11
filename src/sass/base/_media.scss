@@ -82,6 +82,11 @@
         }
 
     }
+    .consultation {
+        .title_consultation {
+            font-size: 30px;
+        }
+    }
 }
 @media ( max-width: 575px ){
     .header {
@@ -153,9 +158,36 @@
         img {
             width: 84px;
         } 
+    }
+    .consultation {
+        padding: 77px 0 92px 0;
+        .title_consultation {        
+            display: none;
+        }
+        .title_consultation-mobile {
+            display: block;
+            margin: 0 auto;
+            width: 382px;
+            font-size: 28px;
+            text-align: center;
+        }
+        .consultation__appeal {
+            display: none;
+        }
+        .consultation__appeal-mobile {
+            display: block;
+            margin: 80px auto 36px;
+            width: 382px;
+            text-align: center;
+        }
 
+        .feed-form {
+            margin: 0 auto;
+        }
+        }
     }
-    }
+
+
     
 
 
