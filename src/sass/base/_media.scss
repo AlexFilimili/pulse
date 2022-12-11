@@ -67,7 +67,10 @@
             font-size: 25px;
         }
         &__block {
+<<<<<<< HEAD
             width: 196px;            
+=======
+>>>>>>> 9788b6df110ba4465c0abef96a1a86b4e727f1b1
             img {
                 width: 57px;
             }
@@ -82,11 +85,14 @@
         }
 
     }
+<<<<<<< HEAD
     .consultation {
         .title_consultation {
             font-size: 30px;
         }
     }
+=======
+>>>>>>> 9788b6df110ba4465c0abef96a1a86b4e727f1b1
 }
 @media ( max-width: 575px ){
     .header {
@@ -142,7 +148,10 @@
         }
         &__block {
             margin-top: 41px;
+<<<<<<< HEAD
             width: 300px;
+=======
+>>>>>>> 9788b6df110ba4465c0abef96a1a86b4e727f1b1
             &:first-child {
                 margin-top: 0;
             }                               
@@ -151,6 +160,7 @@
             font-size: 19px;
         }
         &__blocks_text {
+<<<<<<< HEAD
             font-size: 16px;
             text-align: center;
         }
@@ -188,6 +198,16 @@
     }
 
 
+=======
+            font-size: 14px;
+        }
+        img {
+            width: 84px;
+        } 
+
+    }
+    }
+>>>>>>> 9788b6df110ba4465c0abef96a1a86b4e727f1b1
     
 
 

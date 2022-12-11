@@ -7,6 +7,7 @@
     max-width: 950px;
     margin: 0 auto;
 }
+<<<<<<< HEAD
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
@@ -16,6 +17,13 @@
 @import 'blocks/carusel';
 @import 'blocks/forms';
 @import 'base/media';
+=======
+@import 'blocks/_promo.scss';
+@import 'blocks/_header.scss';
+@import 'blocks/_buttons.scss';
+@import 'blocks/_advantages.scss';
+@import 'base/_media.scss';
+>>>>>>> 9788b6df110ba4465c0abef96a1a86b4e727f1b1
 
 
 
