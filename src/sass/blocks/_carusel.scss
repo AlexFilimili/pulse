@@ -1,25 +1,26 @@
 .carusel {
     padding: 81px 0;    
     position: relative;
-    &__inner {
+/*     &__inner {
         margin: 0 auto;
-        width: 750px;
-        .slick-prev, .slick-next {
-            img {
-                width: 31px;
-                height: 50px;
-            }
-            position: absolute;
-            left: -66px;
-            border: none;
-            background-color: white;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .slick-next {
-            left: auto;
-            right: -70px;
-        }
-    }
+        width: 750px;        
+    } */
 
+/*     .prev, .next {
+        img {
+            width: 31px;
+            height: 50px;
+        }
+        position: absolute;
+        left: -66px;
+        border: none;
+        background-color: white;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .next {
+        left: auto;
+        right: -70px;
+    }
+ */
 }
