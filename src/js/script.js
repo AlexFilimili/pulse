@@ -48,7 +48,7 @@ console.log(answer); */
     logging(2,5);
     logging(3,6); */
 
-$(document).ready(function(){
+/* $(document).ready(function(){
     $('.carusel__inner').slick({
         speed: 1300,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron_left_solid.png"></button>',
@@ -65,4 +65,20 @@ $(document).ready(function(){
               }
         ]
     });
-    });
+    }); */
+
+    const slider = tns({
+        container: '.carusel__inner',
+        items: 1,
+        slideBy: 'page',
+        autoplay: false,
+        controls: false,
+        nav: false
+      });
+
+      document.querySelector('.prev').addEventListener('click', function () {
+        slider.goTo('prev');
+      });
+      document.querySelector('.next').addEventListener('click', function () {
+        slider.goTo('next');
+      });
