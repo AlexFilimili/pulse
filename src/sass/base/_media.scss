@@ -1,10 +1,41 @@
+@media ( max-width: 1199px ){
+    .promo {
+        padding: 0 30px;
+    }   
+    .consultation {
+        padding-left: 30px;
+    }
+    .carusel {        
+        img {
+            width: 60vw;
+        }
+        .prev {
+            left: 0;            
+        }
+        .next {
+            right: 0;            
+        }
+
+    }
+}
+
 @media ( max-width: 991px ){
     .promo {
+        padding: 0 30px;
         h1 {font-size: 33px;}
         h2 {font-size: 21px;}
+    }
+    .carusel {
+        .prev {
+            left: 5vw;            
+        }
+        .next {
+            right: 5vw;            
+        }
     }   
 }
 @media ( max-width: 767px ){
+
     .header {
         &__logo {width: 195px;}
         &__officilal {
@@ -20,11 +51,10 @@
         button {
             width: 129px;
         }
-
     }
     .promo{
         min-height: 521px;
-        padding: 16px 0 66px 0;
+        padding: 16px 20px 66px 20px;
         h1 {
             font-size: 30px;
         }
@@ -87,6 +117,14 @@
             font-size: 30px;
         }
     }
+    .carusel {        
+        .prev, .next {
+            img {
+                width: 70%;
+                height: 70%;
+            }
+        }
+        }
 }
 @media ( max-width: 575px ){
     .header {
