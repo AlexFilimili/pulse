@@ -55,6 +55,19 @@
             }
         }
     } 
+    .feedback {
+        &__content {
+            margin-top: 60px;
+            width: 90vw;
+            margin-left: 30px;
+        }
+        &__img {
+            height: 140px;
+        }
+        &__text {
+            margin-left: 40px;
+        }
+    }
 
 }
 @media ( max-width: 767px ){
@@ -157,8 +170,32 @@
                 font-size: 13px;
             }
         }
+    }
+    .feedback {
+        &__content {
+            flex-direction: column;
+            width: calc(90vw - 3px);
+            margin: 60px auto;
         }
-
+        &__img {
+            height: 139px;
+            width: 139px;
+            margin: auto;
+        }
+        &__text {
+            margin-left: 0;
+            &-author {
+                text-align: center;
+                margin-top: 22px;
+            }
+            &-achievements {
+                text-align: center;
+            }
+            &-experience {
+                text-align: justify;
+            }
+        }
+    }
 }
 @media ( max-width: 575px ){
     .header {
