@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="50.00006px" height="50px" viewBox="0 0 50.00006 50" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M-830 -4855C-816.193 -4855 -805 -4843.81 -805 -4830C-805 -4816.19 -816.193 -4805 -830 -4805C-843.807 -4805 -855 -4816.19 -855 -4830C-855 -4843.81 -843.807 -4855 -830 -4855Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+    <image width="15" height="26" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAaCAYAAABozQZiAAAABHNCSVQICAgIfAhkiAAAAOlJREFUOI3tkyFuQkEURc+HgRBSBwo8xeAwNRgMG6jtOlgMO2ABTZOSNEEiCAkKCbWoKtLm34qi+Hf+H1HJdXPnnfcmM3egRJLGkt7k9R5KwBnwWtL7XIuA3QoQILcwMK8AAfqZmZoBn0DvZmsPbIEANIB1oZ2kobmcnRvtjv1ovE0q/GC8dip8Mt6Xg4OkF+AbEPADTEzdSNIzUL+uW8AhkyTXNUGr2DunyCcsUdGEpagfgCWQ83dhF2AAPN0UHoEPoHldByIJm5qELdxod+yO8ZJD4rzCB4oVJusO/wPsnsUOcaYLhAsOvy5EeFcS7ZCvAAAAAElFTkSuQmCC" id="img_1" />
+  </defs>
+  <g id="Эллипс-1-копия">
+    <use stroke="none" fill="#000000" fill-opacity="0" xlink:href="#path_1" fill-rule="evenodd" />
+    <g clip-path="url(#clip_1)">
+      <use xlink:href="#path_1" fill="none" stroke="#FFFFFF" stroke-width="4" />
+    </g>
+  </g>
+  <g>
+    <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="translate(17 12)" />
+  </g>
+</svg>
