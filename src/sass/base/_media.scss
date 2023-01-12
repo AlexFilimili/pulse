@@ -196,6 +196,21 @@
             }
         }
     }
+    .footer {
+        &__info {
+            width: 385px;
+            height: 209px;
+        }
+        &__addr {
+            margin-top: 23px;
+        }
+        &__phone {
+            margin-top: 25px;
+        }
+        &__social {
+            margin: 29px auto 0;
+        }
+    }
 }
 @media ( max-width: 575px ){
     .header {
@@ -208,6 +223,9 @@
                 height: 22px;
                 font-size: 9px;
             }
+        }
+        &__phone {
+            font-size: 12px;
         }
     }
     .promo {
@@ -275,8 +293,6 @@
         }
         .title_consultation-mobile {
             display: block;
-            margin: 0 auto;
-            width: 382px;
             font-size: 28px;
             text-align: center;
         }
@@ -286,7 +302,6 @@
         .consultation__appeal-mobile {
             display: block;
             margin: 80px auto 36px;
-            width: 382px;
             text-align: center;
         }
 
@@ -323,6 +338,24 @@
             }
 
             
+        }
+    }
+    .footer {
+        &__info {
+            width: 100%;
+
+        }
+    }
+    .modal {
+        .feed-form {
+            padding: 27px;
+            width: calc(100% - 90px);
+            &__close {
+                right: -33px;
+            }
+        }
+        .button_send {
+            width: 100%;
         }
     }
 }
