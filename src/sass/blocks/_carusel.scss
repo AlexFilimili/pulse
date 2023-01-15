@@ -3,8 +3,35 @@
     position: relative;
 /*     &__inner {
         margin: 0 auto;
+<<<<<<< HEAD
         width: 750px;        
     } */
+=======
+        width: 750px;
+    }
+    .prev, .next {
+        img {
+            width: 31px;
+            height: 50px;
+        }
+        position: absolute;
+        left: -66px;
+        border: none;
+        background: rgba(0, 0, 0, 0);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .next {
+        left: auto;
+        right: -70px;
+    }
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+>>>>>>> 0472960
 
 /*     .prev, .next {
         img {

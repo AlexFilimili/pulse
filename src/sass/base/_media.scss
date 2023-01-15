@@ -1,10 +1,77 @@
+@media ( max-width: 1199px ){
+    .promo {
+        padding: 0 30px;
+    }   
+    .consultation {
+        padding-left: 30px;
+    }
+    .carusel {        
+        img {
+            width: 60vw;
+        }
+        .prev {
+            left: 0;            
+        }
+        .next {
+            right: 0;            
+        }
+
+    }
+}
+
 @media ( max-width: 991px ){
     .promo {
+        padding: 0 30px;
         h1 {font-size: 33px;}
         h2 {font-size: 21px;}
-    }   
+    }
+    .carusel {
+        .prev {
+            left: 5vw;            
+        }
+        .next {
+            right: 5vw;            
+        }
+    }
+    .catalog {
+        &__content {
+            display: none;
+            &_active {
+                display: none;
+            }
+        }
+        &__content-mobile {
+            display: none;
+            &_active {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            }
+            &__2Blocks {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 13px;
+
+            }
+        }
+    } 
+    .feedback {
+        &__content {
+            margin-top: 60px;
+            width: 90vw;
+            margin-left: 30px;
+        }
+        &__img {
+            height: 140px;
+        }
+        &__text {
+            margin-left: 40px;
+        }
+    }
+
 }
 @media ( max-width: 767px ){
+
     .header {
         &__logo {width: 195px;}
         &__officilal {
@@ -20,11 +87,10 @@
         button {
             width: 129px;
         }
-
     }
     .promo{
         min-height: 521px;
-        padding: 16px 0 66px 0;
+        padding: 16px 20px 66px 20px;
         h1 {
             font-size: 30px;
         }
@@ -91,8 +157,69 @@
             font-size: 30px;
         }
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 9788b6df110ba4465c0abef96a1a86b4e727f1b1
+=======
+    .carusel {        
+        .prev, .next {
+            img {
+                width: 70%;
+                height: 70%;
+            }
+        }
+    }
+    .catalog {
+        &-item {
+            &__new-price {
+                font-size: 17px;
+            }
+            &__subtitle {
+                font-size: 13px;
+            }
+        }
+    }
+    .feedback {
+        &__content {
+            flex-direction: column;
+            width: calc(90vw - 3px);
+            margin: 60px auto;
+        }
+        &__img {
+            height: 139px;
+            width: 139px;
+            margin: auto;
+        }
+        &__text {
+            margin-left: 0;
+            &-author {
+                text-align: center;
+                margin-top: 22px;
+            }
+            &-achievements {
+                text-align: center;
+            }
+            &-experience {
+                text-align: justify;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            width: 385px;
+            height: 209px;
+        }
+        &__addr {
+            margin-top: 23px;
+        }
+        &__phone {
+            margin-top: 25px;
+        }
+        &__social {
+            margin: 29px auto 0;
+        }
+    }
+>>>>>>> 0472960
 }
 @media ( max-width: 575px ){
     .header {
@@ -105,6 +232,9 @@
                 height: 22px;
                 font-size: 9px;
             }
+        }
+        &__phone {
+            font-size: 12px;
         }
     }
     .promo {
@@ -176,8 +306,6 @@
         }
         .title_consultation-mobile {
             display: block;
-            margin: 0 auto;
-            width: 382px;
             font-size: 28px;
             text-align: center;
         }
@@ -187,15 +315,63 @@
         .consultation__appeal-mobile {
             display: block;
             margin: 80px auto 36px;
-            width: 382px;
             text-align: center;
         }
 
         .feed-form {
             margin: 0 auto;
         }
+    }
+    .catalog {
+        .title {
+            font-size: 27px;
+        }
+        &__tabs {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin-top: 50px;
+        }
+        &__tab {
+            width: 343px;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: -13px;
+            }
+        }
+        &__content-mobile__2Blocks {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        &-item {
+            margin-right: 0;
+            margin-top: 20px;
+            &:nth-child(-n+3) {
+                margin-top: 20px;
+            }
+
+            
         }
     }
+    .footer {
+        &__info {
+            width: 100%;
+
+        }
+    }
+    .modal {
+        .feed-form {
+            padding: 27px;
+            width: calc(100% - 90px);
+            &__close {
+                right: -33px;
+            }
+        }
+        .button_send {
+            width: 100%;
+        }
+    }
+}
 
 
 =======
