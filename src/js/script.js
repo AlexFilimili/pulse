@@ -67,15 +67,6 @@ console.log(answer); */
     });
     }); */
 
-<<<<<<< HEAD
-
-var slider = tns({
-    container: '.carusel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false
-    });
-=======
     const slider = tns({
         container: '.carusel__inner',
         items: 1,
@@ -179,4 +170,3 @@ $(document).ready(function(){
     
 
 });
->>>>>>> 0472960
