@@ -129,4 +129,44 @@ $(document).ready(function(){
         })
     });
 
+    function validateForms(form) {
+        $(form).validate({
+            rules: {          
+                name: {
+                  required: true,
+                  minlength: 2
+                },
+                email: {
+                  required: true,
+                  email: true
+                },
+                tel: {
+                  required: true,
+                  minlength: 10
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите своё имя",
+                    minlength: jQuery.validator.format("Минимум {0} символа")
+                },
+                email: {
+                    required: "Пожалуйста, введите свою почту",
+                    email: "Почта должна быть в формате name@domain.com"              
+                },
+                tel: {
+                    required: "Пожалуйста, введите свой телефон",
+                    minlength: jQuery.validator.format("Минимум {0} символов")
+                }
+            }
+        })
+    };
+
+    validateForms('.feed-form');
+    validateForms('#order form');
+    validateForms('#consultation form');  
+
+    $('input[name=tel]').mask("+7 (999) 999-99-99");
+    
+
 });

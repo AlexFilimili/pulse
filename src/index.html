@@ -106,9 +106,9 @@
           и мы перезвоним вам в течении 10 минут
         </div>
         <form class="feed-form" action="#">
-          <input name="name" required placeholder="Ваше имя" type="text">
-          <input name="tel" equired placeholder="Ваш телефон" type="number">
-          <input name="mail" equired placeholder="Ваш E-mail" type="email">
+          <input name="name" placeholder="Ваше имя" type="text">
+          <input name="tel" placeholder="Ваш телефон">
+          <input name="email" placeholder="Ваш E-mail" type="email">
           <button class="button button_send">заказать кОНСУЛЬТАЦИЮ</button>
         </form>
     </div>
@@ -789,27 +789,27 @@
   </footer>
   <div class="modal">
 
-    <div class="modal__overlay-consultation">
-      <form class="feed-form" id="consultation" action="#">
+    <div class="modal__overlay-consultation" id="consultation">
+      <form class="feed-form" action="#">
         <div class="feed-form__close">&#10006;</div>
         <div class="feed-form__subtitle">Просто заполните форму заявки</div>
         <div class="feed-form__descr">и мы перезвоним вам в течении 10 минут</div>
         <input name="name" required placeholder="Ваше имя" type="text">
-        <input name="tel" equired placeholder="Ваш телефон" type="number">
-        <input name="mail" equired placeholder="Ваш E-mail" type="email">
+        <input name="tel" required placeholder="Ваш телефон">
+        <input name="email" required placeholder="Ваш E-mail" type="email">
         <button class="button button_send">заказать кОНСУЛЬТАЦИЮ</button>
       </form>
     </div>
   
 
-    <div class="modal__overlay-order">
+    <div class="modal__overlay-order" id="order">
       <form class="feed-form" action="#">
         <div class="feed-form__close">&#10006;</div>
         <div class="feed-form__subtitle">Ваш заказ:</div>
         <div class="feed-form__descr">Пульсометр Polar FT1</div>
         <input name="name" required placeholder="Ваше имя" type="text">
-        <input name="tel" equired placeholder="Ваш телефон" type="number">
-        <input name="mail" equired placeholder="Ваш E-mail" type="email">
+        <input name="tel" required placeholder="Ваш телефон"">
+        <input name="email" required placeholder="Ваш E-mail" type="email">
         <button class="button button_send">купить</button>
       </form>
     </div>
@@ -832,6 +832,8 @@
   <script type="text/javascript" src="js/slick.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>
