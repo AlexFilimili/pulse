@@ -1,0 +1,25 @@
+.consultation {
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    background: url('../../img/bg_2_legs.png') center (center/cover) no-repeat;
+    &__appeal, &__appeal-mobile {
+        margin-top: 80px;
+        margin-bottom: 36px;
+        font-family: 'Museo Sans Cyrl 500';
+        font-size: 20px;
+        line-height: 1.2;
+        color: #ffffff;
+    }
+    label.error {
+        color:#ffffff;
+        font-family: 'Museo Sans Cyrl 500';
+        text-align: center;
+        margin-bottom: 11px;
+    }
+    input.error {
+        border: 1px solid red;
+    }
+    .title_consultation-mobile, .consultation__appeal-mobile {
+        display: none;
+    }
+}

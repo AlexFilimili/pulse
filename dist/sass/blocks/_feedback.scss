@@ -1,0 +1,37 @@
+.feedback {    
+    display: block; 
+    padding-bottom: 71px;
+    &__content {
+        margin-top: 70px;
+        width: 885px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        display: block;
+        height: 169px;
+    }
+    &__text {
+        margin-left: 62px;
+        &-author{
+            font-family: 'Museo Sans Cyrl 700';
+            font-size: 18px;
+            line-height: 1.2;
+            color: #0d0d0d;
+        }
+        &-achievements {
+            margin-top: 10px;
+            font-family: 'Museo Sans Cyrl 300';
+            font-size: 14px;
+            line-height: 1.2;
+            color: #646464;
+        }
+        &-experience {
+            margin-top: 19px;
+            font-family: 'Museo Sans Cyrl 300';
+            font-size: 16px;
+            line-height: 1.2;
+            color: #0d0d0d;
+        }
+    }
+}

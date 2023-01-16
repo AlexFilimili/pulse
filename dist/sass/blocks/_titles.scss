@@ -1,0 +1,15 @@
+.title {
+    font-family: 'Museo Sans Cyrl 700';
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #0d0d0d;
+    text-align: center;  
+    &_consultation, &_consultation-mobile {
+        font-size: 36px;
+        line-height: 1.2;
+        color: #ffffff;
+        text-align: left;
+    }
+    
+}

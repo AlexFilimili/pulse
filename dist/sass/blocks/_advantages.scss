@@ -1,0 +1,39 @@
+.advantages {
+    padding: 70px 0 78px 0;
+    min-height: 470px;
+    background-color: #f6f6f6;
+    &__blocks_title {        
+        margin-top: 38px;
+        font-family: 'Museo Sans Cyrl 700';
+        font-size: 18px;
+        line-height: 1.2;
+        color: #0d0d0d;
+    }
+    &__blocks_text {
+        margin-top: 26px;
+        font-family: 'Museo Sans Cyrl 300';
+        font-size: 14px;
+        line-height: 1.2;
+        color: #0d0d0d; 
+        text-align: center;  
+        span {
+            text-decoration: underline;
+            color: #ff0000;
+        }
+    }
+    img {
+        margin: 0 auto;
+    }        
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 248px;
+    }
+    &__3-blocks {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+    }   
+}
+

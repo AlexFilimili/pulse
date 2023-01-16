@@ -140,7 +140,7 @@ $(document).ready(function(){
                   required: true,
                   email: true
                 },
-                phone: {
+                tel: {
                   required: true,
                   minlength: 10
                 }
@@ -154,7 +154,7 @@ $(document).ready(function(){
                     required: "Пожалуйста, введите свою почту",
                     email: "Почта должна быть в формате name@domain.com"              
                 },
-                phone: {
+                tel: {
                     required: "Пожалуйста, введите свой телефон",
                     minlength: jQuery.validator.format("Минимум {0} символов")
                 }
@@ -162,32 +162,11 @@ $(document).ready(function(){
         })
     };
 
-    validateForms('#consultation-form');
+    validateForms('.feed-form');
     validateForms('#order form');
     validateForms('#consultation form');  
 
-    $('input[name=phone]').mask("+7 (999) 999-99-99");
+    $('input[name=tel]').mask("+7 (999) 999-99-99");
     
-    $('form').submit(function(e) {
-        e.preventDefault();
-
-        if (!$(this).valid()) {
-            return;
-        }
-
-        $.ajax({
-            type: "POST",
-            url: "mailer/smart.php",
-            data: $(this).serialize()
-        }).done(function() {
-            $(this).find("input").val("");
-            $('#consultation, #order').fadeOut();
-            $('.modal__overlay-thanks').fadeIn('slow');
-
-            $('form').trigger('reset');
-        });
-        return false;
-
-    });
 
 });
