@@ -34,6 +34,12 @@
         margin-top: 65px;
         display: flex;
         justify-content: space-between;
+    }
+    &__heart-img {
+        animation: heartbeat 1.5s infinite ease;
+        &:hover {
+            animation-play-state: paused;
+        }
     }   
 }
 

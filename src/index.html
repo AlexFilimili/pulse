@@ -11,11 +11,16 @@
     <link rel="stylesheet" href="css/fonts.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> 
     <link rel="stylesheet" href="css/style.min.css"> <!-- подключи свои стили css -->
+
   </head>
 
 <body>
-  <section class="promo">
+  <section id="up" class="promo">
     <div class="container">
       <div class="header">
 
@@ -57,7 +62,7 @@
 
         </div>
         <button data-modal="consultation" class="button button_promo">заказать кОНСУЛЬТАЦИЮ</button>
-        <div class="to_the_catalog">или <a class="to_the_catalogLink" href="">ПЕРЕЙТИ В КАТАЛОГ</a></div>
+        <div class="to_the_catalog">или <a class="to_the_catalogLink" href="#go-catalog">ПЕРЕЙТИ В КАТАЛОГ</a></div>
       </div>
     </div>
   </section>
@@ -73,7 +78,7 @@
             так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
         </div>
         <div class="advantages__block">
-          <img src="icons/Icon_heart.png" alt="heart">
+          <img src="icons/Icon_heart.png" class="advantages__heart-img" alt="heart">
           <div class="advantages__blocks_title">Заботимся о здоровье</div>
           <div class="advantages__blocks_text">Мы работаем для того,<br>
             чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
@@ -128,7 +133,7 @@
     </div>
   </section>
 
-  <section class="catalog">
+  <section id="go-catalog" class="catalog">
     <div class="container">
       <div class="title">КАТАЛОГ ПУЛЬСОМЕТРОВ</div>
 
@@ -139,7 +144,7 @@
       </ul>
       <div class="catalog__content catalog__content_active">
 
-        <div class="catalog-item">
+        <div class="catalog-item wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__main catalog-item__main_active">            
   
@@ -169,7 +174,7 @@
           </div>
         </div>    
         
-        <div class="catalog-item">
+        <div class="catalog-item wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__main catalog-item__main_active">            
   
@@ -199,7 +204,7 @@
           </div>
         </div> 
   
-        <div class="catalog-item">
+        <div class="catalog-item wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.6s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__main catalog-item__main_active">            
   
@@ -229,7 +234,7 @@
           </div>
         </div> 
   
-        <div class="catalog-item">
+        <div class="catalog-item wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__main catalog-item__main_active">            
   
@@ -259,7 +264,7 @@
           </div>
         </div> 
   
-        <div class="catalog-item">
+        <div class="catalog-item wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__main catalog-item__main_active">            
   
@@ -289,7 +294,7 @@
           </div>
         </div> 
   
-        <div class="catalog-item">
+        <div class="catalog-item wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.6s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__main catalog-item__main_active">            
   
@@ -727,7 +732,7 @@
     <div class="container">
       <div class="title">отзывы клиентов</div>
 
-      <div class="feedback__content">
+      <div class="feedback__content wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
         <img src="img/woman_on_a_pedestal.png" alt="woman on a pedestal" class="feedback__img">
         <div class="feedback__text">
           <div class="feedback__text-author">Ирина Иванченко</div>
@@ -743,7 +748,7 @@
         </div>      
       </div>
       
-      <div class="feedback__content">
+      <div class="feedback__content wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
         <img src="img/man_in_a_shirt.png" alt="woman on a pedestal" class="feedback__img">
         <div class="feedback__text">
           <div class="feedback__text-author">Иван Сёмочкин</div>
@@ -756,7 +761,7 @@
         </div>      
       </div>
 
-      <div class="feedback__content">
+      <div class="feedback__content wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
         <img src="img/women_in_orange_img.png" alt="woman on a pedestal" class="feedback__img">
         <div class="feedback__text">
           <div class="feedback__text-author">Юлия Дашкина</div>
@@ -824,6 +829,11 @@
     </div>
   </div>
 
+  <a href="#up" class="page-up">
+    <img src="icons/chevron-up-solid.svg" alt="chevrons up">
+  </a>
+  
+
 </div>
 
 
@@ -834,6 +844,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>
