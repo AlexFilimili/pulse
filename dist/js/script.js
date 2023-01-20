@@ -106,7 +106,7 @@ $(document).ready(function(){
         });
     };
     toggleSlide('.catalog-item__main__link');
-    toggleSlide('.catalog-item__description__back-link');
+    toggleSlide('.catalog-item__description__back-link, .catalog-item__back-link');
 
     // modal
 
@@ -140,7 +140,7 @@ $(document).ready(function(){
                   required: true,
                   email: true
                 },
-                tel: {
+                phone: {
                   required: true,
                   minlength: 10
                 }
@@ -154,7 +154,7 @@ $(document).ready(function(){
                     required: "Пожалуйста, введите свою почту",
                     email: "Почта должна быть в формате name@domain.com"              
                 },
-                tel: {
+                phone: {
                     required: "Пожалуйста, введите свой телефон",
                     minlength: jQuery.validator.format("Минимум {0} символов")
                 }
@@ -162,11 +162,50 @@ $(document).ready(function(){
         })
     };
 
-    validateForms('.feed-form');
+    validateForms('#consultation-form');
     validateForms('#order form');
     validateForms('#consultation form');  
 
-    $('input[name=tel]').mask("+7 (999) 999-99-99");
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
     
+    // отправка формы
+
+        $('form').submit(function(e) {
+        e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.modal__overlay-thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+
+    });
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1444) {
+            $('.page-up').fadeIn();
+        } else {
+            $('.page-up').fadeOut();
+        }
+    });
+
+    // плавный скролл по странице
+    $("a[href^='#']").click(function() {
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+
+    new WOW().init();
 
 });

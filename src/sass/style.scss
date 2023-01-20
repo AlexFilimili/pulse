@@ -1,6 +1,9 @@
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
+@import 'libs/fonts';
  
 .container {
     position: relative;

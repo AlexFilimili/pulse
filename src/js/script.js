@@ -201,7 +201,7 @@ $(document).ready(function(){
 
     // плавный скролл по странице
     $("a[href^='#']").click(function() {
-        const _href = $(this).atr("href");
+        const _href = $(this).attr("href");
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
