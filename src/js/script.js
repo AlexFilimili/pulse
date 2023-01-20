@@ -106,7 +106,7 @@ $(document).ready(function(){
         });
     };
     toggleSlide('.catalog-item__main__link');
-    toggleSlide('.catalog-item__description__back-link');
+    toggleSlide('.catalog-item__description__back-link, .catalog-item__back-link');
 
     // modal
 
