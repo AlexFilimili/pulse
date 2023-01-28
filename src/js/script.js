@@ -91,7 +91,7 @@ $(document).ready(function(){
             if(window.screen.availWidth > 991){
                 $(this).closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active')              
             }
-            if(window.screen.availWidth > 370){
+            if(window.screen.availWidth > 310){
                 $(this).closest('div.container').find('div.catalog__content-mobile').removeClass('catalog__content-mobile_active').eq($(this).index()).addClass('catalog__content-mobile_active') 
             }})
 

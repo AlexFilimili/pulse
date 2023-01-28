@@ -225,7 +225,12 @@
             }
         }
         &__phone {
-            font-size: 12px;
+            font-size: 11px;
+        }
+        &__logo {
+            img {
+                width: 83%;
+            }            
         }
     }
     .promo {
@@ -320,7 +325,7 @@
             margin-top: 50px;
         }
         &__tab {
-            width: 343px;
+            width: 300px;
             margin-bottom: 10px;
             &:last-child {
                 margin-bottom: -13px;
@@ -357,6 +362,12 @@
         .button_send {
             width: 100%;
         }
+    }
+    .page-up {
+        bottom: 20px;
+        right: 20px;
+        height: 20px;
+        width: 30px;
     }
 }
 
