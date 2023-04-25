@@ -67,7 +67,7 @@ console.log(answer); */
     });
     }); */
 
-    const slider = tns({
+    /* const slider = tns({
         container: '.carusel__inner',
         items: 1,
         slideBy: 'page',
@@ -82,7 +82,7 @@ console.log(answer); */
       });
       document.querySelector('.next').addEventListener('click', function () {
         slider.goTo('next');
-      });
+      }); */
 
 $(document).ready(function(){
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
@@ -147,16 +147,16 @@ $(document).ready(function(){
             },
             messages: {
                 name: {
-                    required: "Пожалуйста, введите своё имя",
-                    minlength: jQuery.validator.format("Минимум {0} символа")
+                    required: "Please enter your name",
+                    minlength: jQuery.validator.format("Minimum {0} symbol")
                 },
                 email: {
-                    required: "Пожалуйста, введите свою почту",
+                    required: "Please enter your email address",
                     email: "Почта должна быть в формате name@domain.com"              
                 },
                 phone: {
-                    required: "Пожалуйста, введите свой телефон",
-                    minlength: jQuery.validator.format("Минимум {0} символов")
+                    required: "Please enter your phone number",
+                    minlength: jQuery.validator.format("Minimum {0} symbol")
                 }
             }
         })
@@ -198,6 +198,38 @@ $(document).ready(function(){
             $('.page-up').fadeOut();
         }
     });
+    //появление и скрытие элемента навигации на мобильном устройстве
+    $(window).scroll(function() {
+        // Выбираем переменные
+        const block = document.querySelector('.catalog');
+        const element = document.querySelector('.UpToChoise');
+
+        // Регистрируем слушателя событий
+        window.addEventListener('scroll', handleScroll);
+
+        function handleScroll() {
+        // Расчет текущей позиции при прокрутке
+        const scrollTop = window.pageYOffset;
+        const blockPosition = block.offsetTop;
+        const bottomOfBlock = blockPosition + block.offsetHeight;
+
+        //применяемо с разрешениями до 575px
+        const width = window.matchMedia('( max-width: 575px )');
+        
+        // Если текущая позиция больше, чем блок, тогда скрываем элемент на мобильном устройстве           
+            if (width.matches) {
+                if ($(this).scrollTop() > 3300 && $(this).scrollTop() < 4500) {
+                    $('.UpToChoise').fadeIn();
+                } 
+                else if (scrollTop > bottomOfBlock) {
+                    $('.UpToChoise').fadeOut();
+                }
+                else { ($(this).scrollTop()) 
+                        $('.UpToChoise').fadeOut();
+                } 
+            }
+        }       
+    });
 
     // плавный скролл по странице
     $("a[href^='#']").click(function() {
@@ -208,4 +240,23 @@ $(document).ready(function(){
 
     new WOW().init();
 
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: true,
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+      });
+
 });
+

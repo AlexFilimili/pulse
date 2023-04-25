@@ -1,30 +1,27 @@
 .carusel {
-    padding: 81px 0;    
-    position: relative;
-    &__inner {
-        margin: 0 auto;
-        width: 750px;
-    }
-    .prev, .next {
-        img {
-            width: 31px;
-            height: 50px;
+    .swiper { 
+        &-button-prev, &-button-next {
+            color: $main-color; 
+            font-weight: 900;
         }
-        position: absolute;
-        left: -66px;
-        border: none;
-        background: rgba(0, 0, 0, 0);
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .next {
-        left: auto;
-        right: -70px;
-    }
-    .tns-item {
-        img {
-            display: block;
-            margin: 0 auto;
+    
+        &-pagination-bullet-active{
+            background: $main-color;
+        } 
+        &-scrollbar {
+            display: none;
+        }
+        
+    } 
+    .slide {
+        display: grid;
+        grid-template: auto / auto;
+        &__img {        
+            justify-self: center;
+            img {
+                object-fit: contain;
+            }
+            
         }
     }
 

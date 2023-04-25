@@ -41,7 +41,7 @@
             transform: skewX(25deg);   
         }
     }
-    &-item {
+    &-item {        
         width: 300px;
         min-height: 440px;
         border: 2px solid #e8e8e8;
@@ -148,6 +148,15 @@
                 }
             }
         }
+        &_animationRight {
+            animation: slide-in-blurred-tr 0.4s both;
+        }
+        &_animationTop {
+            animation: slide-in-blurred-top 0.4s both;
+        }
+        &_animationLeft {
+            animation: slide-in-blurred-tl 0.4s both;
+        }
         hr {
             margin-top: 19px;
             margin-bottom: 21px;
@@ -188,3 +197,11 @@
         }
     }
 }
+
+
+
+
+
+
+ 
+  

@@ -67,12 +67,13 @@
         &__text {
             margin-left: 40px;
         }
-    }
+    }    
 
 }
 @media ( max-width: 767px ){
 
     .header {
+        padding-top: 0;
         &__logo {width: 195px;}
         &__officilal {
             width: 146px;
@@ -154,12 +155,7 @@
         }
     }
     .carusel {        
-        .prev, .next {
-            img {
-                width: 70%;
-                height: 70%;
-            }
-        }
+        padding: 60px 0;
     }
     .catalog {
         &-item {
@@ -225,7 +221,7 @@
             }
         }
         &__phone {
-            font-size: 11px;
+            font-size: 10px;
         }
         &__logo {
             img {
@@ -325,7 +321,7 @@
             margin-top: 50px;
         }
         &__tab {
-            width: 300px;
+            width: 267px;
             margin-bottom: 10px;
             &:last-child {
                 margin-bottom: -13px;
@@ -369,6 +365,16 @@
         height: 20px;
         width: 30px;
     }
+    .swiper { 
+        &-pagination {
+            margin-bottom: -5px;
+        }      
+        &-button-prev::after, &-button-next::after {
+            font-size: 33px;
+        }
+    }
+    
+    
 }
 
 
