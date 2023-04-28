@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="heart rate monitor for health">
     <title>Pulse</title> <!-- измени имя сайта -->
-    <link rel="icon" href="favicon.ico"> <!-- подключи иконку во вкладке браузера -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.min.css"> <!-- подключи свои стили css -->
+    <link rel="icon" href="favicon.ico"> <!-- подключи иконку во вкладке браузера --> 
+    <!-- <link rel="stylesheet" href="css/first.screen.css"> -->
+    <!-- <link rel="preload" href="css/first.screen.css" as="style" onload="this.rel='stylesheet'"> -->
+    <link rel="stylesheet" href="css/swiper.css" media="print" onload="this.media='all'">    
+    <!-- <link rel="stylesheet" href="css/style.min.css">  -->
+    <!-- <link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'"> -->
+    <link rel="preload" href="css/style.min.css" as="style" onload="this.rel='stylesheet'">
+    
+    
 
   </head>
 
   <body>
-    <section id="up" class="promo">
+    <section id="up" class="promo" style="background-image:url('img/bg_1_screen.webp');">
       <div class="container">
         <div class="header">
 
@@ -292,7 +298,7 @@
               <div class="catalog-item__main catalog-item__main_active">            
     
                 <img src="img/VantageV2blkHR.webp" alt="heart rate monitor" class="catalog-item__img">
-                <div class="catalog-item__title">Polar Vantage V2</div>
+                <div class="catalog-item__title trigger-block">Polar Vantage V2</div>
                 <div class="catalog-item__subtitle">Premium multi-sport professional watch with H10 heart rate chest sensor</div>
                 <a href="#" class="catalog-item__main__link">READ MORE</a>
     
@@ -387,7 +393,7 @@
               <div class="catalog-item__main catalog-item__main_active">            
     
                 <img src="img/Vantage-V2.webp" alt="heart rate monitor" class="catalog-item__img">
-                <div class="catalog-item__title">Polar Vantage V2</div>
+                <div class="catalog-item__title trigger-block">Polar Vantage V2</div>
                 <div class="catalog-item__subtitle">Limited Edition! For true Polar connoisseurs</div>
                 <a href="#" class="catalog-item__main__link">READ MORE</a>
     
@@ -479,7 +485,7 @@
               <div class="catalog-item__main catalog-item__main_active">            
     
                 <img src="img/Ignite-2_frontleft_champagne_Time-1 _1_ (1).webp" alt="heart rate monitor" class="catalog-item__img">
-                <div class="catalog-item__title">Polar Ignite 2</div>
+                <div class="catalog-item__title trigger-block">Polar Ignite 2</div>
                 <div class="catalog-item__subtitle">Smart fitness watch with optional strap</div>
                 <a href="#" class="catalog-item__main__link">READ MORE</a>
     
@@ -643,7 +649,7 @@
                 <div class="catalog-item__main catalog-item__main_active">            
       
                   <img src="img/VantageV2blkHR.webp" alt="heart rate monitor" class="catalog-item__img">
-                  <div class="catalog-item__title">Polar Vantage V2</div>
+                  <div class="catalog-item__title trigger-block">Polar Vantage V2</div>
                   <div class="catalog-item__subtitle">Premium multi-sport professional watch with H10 heart rate chest sensor</div>
                   <a href="#" class="catalog-item__main__link">READ MORE</a>
       
@@ -744,7 +750,7 @@
                 <div class="catalog-item__main catalog-item__main_active">            
       
                   <img src="img/Vantage-V2.webp" alt="heart rate monitor" class="catalog-item__img">
-                  <div class="catalog-item__title">Polar Vantage V2</div>
+                  <div class="catalog-item__title trigger-block">Polar Vantage V2</div>
                   <div class="catalog-item__subtitle">Limited Edition! For true Polar connoisseurs</div>
                   <a href="#" class="catalog-item__main__link">READ MORE</a>
       
@@ -842,7 +848,7 @@
                 <div class="catalog-item__main catalog-item__main_active">            
       
                   <img src="img/Ignite-2_frontleft_champagne_Time-1 _1_ (1).webp" alt="heart rate monitor" class="catalog-item__img">
-                  <div class="catalog-item__title">Polar Ignite 2</div>
+                  <div class="catalog-item__title trigger-block">Polar Ignite 2</div>
                   <div class="catalog-item__subtitle">Smart fitness watch with optional strap</div>
                   <a href="#" class="catalog-item__main__link">READ MORE</a>
       
@@ -981,20 +987,16 @@
         <p>^^ To category</p>
     </a>
 
-    
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-   <!--  <script src="js/swiper.js"></script> --> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  -->
+    <script src="js/ajax.googleapis.js"></script>
     <script src="js/jquery.validate.min.js"></script> <!-- валидация формы -->
     <script src="js/jquery.maskedinput.min.js"></script> <!-- маска ввода телефона --> 
-    <script src="js/wow.min.js"></script> <!-- анимация -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> 
-    <script src="https://kit.fontawesome.com/06ff489fc7.js" crossorigin="anonymous"></script> <!-- подключи иконочный шрифт -->
+    <script src="js/wow.min.js"></script> <!-- анимация -->    
+    <script src="js/kit.fontawesome.js" crossorigin="anonymous"></script>
+    <script src="js/swiper.js"></script> 
     <script src="js/script.js"></script>
+
 
   </body>
 </html>

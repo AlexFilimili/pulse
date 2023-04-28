@@ -1,88 +1,3 @@
-/* let answer = confirm("Вам есть 18?");
-console.log(answer); */
-
-/* console.log(4+'fff'); */
-
-/* let isChecked = false,
-    isClose = false; */
-
-/* console.log(isChecked && isClose); */ /* оператор и */
-/* console.log(isChecked || isClose);  *//* оператор или */
-
-/* if (3*5 == 9+8) {
-    console.log('Верно');
-} else {
-    console.log('Ошибка')
-} */
-
-/* let answer = confirm("Вам есть 18?");
-    if (answer) {
-        console.log('заходь');
-    }
-    else {
-        console.log('тебе нельзя');
-    } */
-
-/*    const num = 5;
-    if (num<4) {
-        console.log('мало');
-    }
-    else if (num>7) {
-        console.log('много');
-    }
-    else if (num>9) {
-        console.log('много');
-    }
-    else {
-        console.log('верно');
-    } */
-
-/*     for (let i = 1; i < 16; i++) {
-        console.log(i);
-    }
- */
-
-/*     function logging (a,b) {
-        console.log(a*b);
-    }
-    logging(2,5);
-    logging(3,6); */
-
-/* $(document).ready(function(){
-    $('.carusel__inner').slick({
-        speed: 1300,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron_left_solid.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron_right_solid.png"></button>',
-        responsive: [
-            {
-              breakpoint: 900,
-              settings: {
-                arrows: false,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-              }
-              }
-        ]
-    });
-    }); */
-
-    /* const slider = tns({
-        container: '.carusel__inner',
-        items: 1,
-        slideBy: 'page',
-        autoplay: false,
-        controls: false,
-        nav: false,
-        speed: 1200
-      });
-
-      document.querySelector('.prev').addEventListener('click', function () {
-        slider.goTo('prev');
-      });
-      document.querySelector('.next').addEventListener('click', function () {
-        slider.goTo('next');
-      }); */
 
 $(document).ready(function(){
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
@@ -197,46 +112,14 @@ $(document).ready(function(){
         } else {
             $('.page-up').fadeOut();
         }
-    });
-    //появление и скрытие элемента навигации на мобильном устройстве
-    $(window).scroll(function() {
-        // Выбираем переменные
-        const block = document.querySelector('.catalog');
-        const element = document.querySelector('.UpToChoise');
-
-        // Регистрируем слушателя событий
-        window.addEventListener('scroll', handleScroll);
-
-        function handleScroll() {
-        // Расчет текущей позиции при прокрутке
-        const scrollTop = window.pageYOffset;
-        const blockPosition = block.offsetTop;
-        const bottomOfBlock = blockPosition + block.offsetHeight;
-
-        //применяемо с разрешениями до 575px
-        const width = window.matchMedia('( max-width: 575px )');
-        
-        // Если текущая позиция больше, чем блок, тогда скрываем элемент на мобильном устройстве           
-            if (width.matches) {
-                if ($(this).scrollTop() > 3300 && $(this).scrollTop() < 4500) {
-                    $('.UpToChoise').fadeIn();
-                } 
-                else if (scrollTop > bottomOfBlock) {
-                    $('.UpToChoise').fadeOut();
-                }
-                else { ($(this).scrollTop()) 
-                        $('.UpToChoise').fadeOut();
-                } 
-            }
-        }       
-    });
+    });  
 
     // плавный скролл по странице
-    $("a[href^='#']").click(function() {
+/*     $("a[href^='#']").click(function() {
         const _href = $(this).attr("href");
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
-    });
+    }); */
 
     new WOW().init();
 
@@ -259,4 +142,26 @@ $(document).ready(function(){
       });
 
 });
+
+//применяемо с разрешениями до 575px
+const width = window.matchMedia('( max-width: 575px )');
+// добавляем прослушиватель событий на скроллинг страницы
+if (width.matches) {
+    window.addEventListener('scroll', function() {
+        // определяем, насколько далеко прокрутили страницу
+        const pageYOffset = window.pageYOffset;
+        // определяем координаты блока, после которого должен появиться элемент
+        const triggerOffset = document.querySelector('.feedback').offsetTop;
+
+        // если прокрутка достигла блока, то плавно показываем элемент
+        if (pageYOffset >= triggerOffset) {
+            $('.UpToChoise').fadeIn();
+        }    
+        else {
+            // если прокрутка не достигла блока, то плавно скрываем элемент
+            $('.UpToChoise').fadeOut();
+        }
+    });
+}
+
 
